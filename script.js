@@ -90,6 +90,7 @@ let letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
    clearInterval(countDown);  
   } else {  
    alphabet.innerHTML = `<h1>YOU LOST!</h1><div class='btn'>TRY AGAIN</div>`;  
+   board.innerHTML = passwordBoard[random];
    lose.play();  
    clearInterval(countDown);  
   }  
@@ -99,7 +100,7 @@ let letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
  };  
  const timer = function () {  
   const timer = document.querySelector('#timer');  
-  let time = new Date(60000);  
+  let time = new Date(90000);  
   const options = {  
    minute: '2-digit',  
    second: '2-digit',  
